@@ -2,7 +2,7 @@ import base64
 import json
 from pathlib import Path
 
-image_path = Path("../CSE546-datasets/video_frames_100/video_frames_100/test_06.jpg")
+image_path = Path("../datasets/video_frames_100/video_frames_100/test_06.jpg")
 
 with open(image_path, "rb") as f:
     encoded = base64.b64encode(f.read()).decode("utf-8")
